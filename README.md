@@ -1,20 +1,19 @@
-🎯 Goal
+Low-Light Image Enhancement
+Overview
 
-To transform dim or underexposed images into clearer versions that are easier to interpret visually.
+This project focuses on improving the visibility of images captured in low-light conditions. It uses a simple image processing technique to enhance brightness and contrast.
 
-⚙️ Implementation Idea
+Problem
 
-The process involves isolating the intensity information of an image, enhancing it using adaptive contrast techniques, and reconstructing the image with improved visibility.
+Images taken in dark environments often lack clarity, making it difficult to see important details.
 
-🔁 Processing Flow
+Approach
+Input a low-light image
+Convert the image to LAB color space
+Apply CLAHE on the brightness (L) channel
+Reconstruct the image to obtain an enhanced version
 
-Dark Image → Intensity Extraction → Adaptive Enhancement → Reconstructed Image
-
-📊 Observations
-Enhanced illumination across the image
-Better separation of objects from the background
-Noticeable improvement in overall visual quality
-🚀 Scope for Expansion
-Applying neural network-based enhancement models
-Extending the system for continuous video input
-Using enhanced images for downstream vision tasks
+Result
+Improved brightness
+Better contrast
+Clearer visual details
