@@ -1,19 +1,46 @@
-Low-Light Image Enhancement
-Overview
+# Low-Light Image Enhancement
 
-This project focuses on improving the visibility of images captured in low-light conditions. It uses a simple image processing technique to enhance brightness and contrast.
+## Overview
 
-Problem
+This project improves the visibility of images captured in low-light conditions. It applies a contrast enhancement technique to make dark images clearer and easier to interpret.
 
-Images taken in dark environments often lack clarity, making it difficult to see important details.
+---
 
-Approach
-Input a low-light image
-Convert the image to LAB color space
-Apply CLAHE on the brightness (L) channel
-Reconstruct the image to obtain an enhanced version
+## Problem
 
-Result
-Improved brightness
-Better contrast
-Clearer visual details
+Images taken in dim environments often appear dark and lack detail, which can affect tasks like monitoring and visual analysis.
+
+---
+
+## Approach
+
+The enhancement process is based on CLAHE (Contrast Limited Adaptive Histogram Equalization):
+
+* Convert image from BGR to LAB color space
+* Extract the brightness (L) channel
+* Apply CLAHE to enhance contrast
+* Merge channels and reconstruct the image
+
+---
+
+## Results
+
+* Increased brightness
+* Improved contrast
+* Better visibility of details
+
+---
+
+## Tech Stack
+
+* Python
+* OpenCV
+* NumPy
+* Matplotlib
+
+---
+
+## Sample Output
+
+Original vs Enhanced:
+
